@@ -1,0 +1,28 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <div class="shortly-title">
+    <h2>Shortly - The URL shortener</h2>
+  </div>
+</div>
+
+<div class="main-search-card">
+  <mat-card class="search-card">
+    <mat-form-field class="form-field">
+      <mat-label>URL</mat-label>
+      <input matInput type="text" placeholder="Enter the URL here" [(ngModel)]="value">
+      <button mat-button *ngIf="value" matSuffix mat-icon-button (click)="value=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+    <div>
+      <button mat-flat-button color="primary" (click)="shortenUrl()">Shorten URL</button>
+    </div>
+    <div style="padding-top: 20px;">
+      <mat-card *ngIf="shortenedUrl">
+        <h3><b>Shortened URL</b></h3>
+        <span>{{shortenedUrl}}</span>
+      </mat-card>
+    </div>
+  </mat-card>
+</div>
+<router-outlet></router-outlet>

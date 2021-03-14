@@ -1,0 +1,3 @@
+interface url {
+    url: String;
+}
