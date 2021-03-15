@@ -2,12 +2,10 @@
 
 Shortly is an API for shortening urls.
 
-The following are the requirements 
-
-      Design and implement an API for short URL creation
-       There should be some form of persistent storage, but don’t waste too much time on
-      database configuration – simple file holding records or transitory runtime object is enough,
-       Implement forwarding of short URLs to the original ones,
+* The following are the requirements 
+* 
+*      Design and implement an API for short URL creation
+*      Implement forwarding of short URLs to the original ones,
 
 ### Steps to run the application locally
 
