@@ -11,7 +11,7 @@ The following are the requirements:
    * Angular for frontend
    * Spring Boot in-memory H2 database
    * Mockito for Service Layer Test
-   * Docer for distribution
+   * Docker for distribution
 
 ### How shortcode is generated?
 
